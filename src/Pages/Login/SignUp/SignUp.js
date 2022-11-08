@@ -172,14 +172,17 @@ const SignUp = () => {
 
                   {/* condition btn */}
                     <span>
+                      <p>
                     <label className="sr-only" htmlFor="phone">
                      <div>
                      <input type="checkbox" checked className="checkbox checkbox-xs" /> 
-                     <p onClick={handleAccepted} className="mt-4 text-sm text-gray-500 sm:mt-0 text-center">{<>Accept <Link to="/terms" className="text-slate-700">terms and condition</Link></> }</p> 
+                     <p onClick={handleAccepted} className="mt-4 text-sm text-slate-700 sm:mt-0 text-center">{<>Accept <Link to="/terms" className="text-slate-700">terms and condition</Link></> }</p> 
                      </div>
                      <button className="btn btn-xs text-blue-800"disabled={!accepted}>signup</button>
                    </label>
+                     </p>
                     </span>
+                    {/* condition btn end */}
 
                     <p className="mt-4 text-sm text-gray-500 sm:mt-0 text-center">
                     Already have an account?

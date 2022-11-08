@@ -4,13 +4,15 @@ import { Link } from 'react-router-dom';
 const ServiceDetails = () => {
     return (
       <div className='grid grid-cols-3 md:grid-cols-3 gap-4 mt-7 mb-10'>
-        <h1>single details of the card</h1>
+        <h1> card details</h1>
         <section>
-            
+             this is single card details page 
         </section>
+      
 
+       {/* review section  img rounded kora lagbe*/}
      <section>
-      {/* review section */}
+     
       {/* <article class="rounded-lg border border-gray-100 p-4 shadow-sm transition hover:shadow-lg sm:p-6">
        <span class="inline-block rounded bg-blue-600 p-2 text-white">
         <svg
@@ -60,9 +62,9 @@ const ServiceDetails = () => {
       &rarr;
     </span>
   </a>
-  </article>       */}
+  </article> */}
+   </section>
   {/* review section end */}
-    </section>
   </div>
   );
  };

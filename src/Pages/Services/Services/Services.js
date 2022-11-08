@@ -4,115 +4,129 @@ import React from "react";
 const Services = () => {
   return (
     
-      <div className="grid grid-cols-3 md:grid-cols-3 gap-4 mb-10 mt-10">
-        {/* card one */}
-      <div >
-        <a href="/" class="group relative bg-slate-900 block h-96">
-        <span class="absolute inset-0 border-2 border-dashed border-black"></span>
-        <div class="relative flex h-full transform items-end border-2 border-black  transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
-          <div class="px-8 pb-8 transition-opacity group-hover:absolute group-hover:opacity-0">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-12 w-12"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-
-            <h2 class="mt-4 text-2xl font-medium">Go around the world</h2>
-          </div>
-
-          <div class="absolute p-8 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100">
-            <h3 class="mt-4 text-2xl font-medium">Go around the world</h3>
-
-            <p class="mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate, praesentium voluptatem omnis atque culpa repellendus.
+   <div>
+     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+        <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+          <img
+            src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+            className="object-cover w-full h-64"
+            alt=""
+          />
+          <div className="p-5 border border-t-0">
+            <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
+              <a
+                href="/"
+                className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
+                aria-label="Category"
+                title="traveling"
+              >
+                traveling
+              </a>
+              <span className="text-gray-600">— 28 Dec 2020</span>
             </p>
-
-            <p class="mt-8 font-bold">Read more</p>
+            <a
+              href="/"
+              aria-label="Category"
+              title="Visit the East"
+              className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
+            >
+              Visit the East
+            </a>
+            <p className="mb-2 text-gray-700">
+              Sed ut perspiciatis unde omnis iste natus error sit sed quia
+              consequuntur magni voluptatem doloremque.
+            </p>
+            <a
+              href="/"
+              aria-label=""
+              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+              Learn more
+            </a>
           </div>
         </div>
-      </a>
-      </div>
-      {/* card two */}
-      <div >
-        <a href="/" class="group relative bg-slate-900 block h-96">
-        <span class="absolute inset-0 border-2 border-dashed border-black"></span>
-        <img className="w-50 h-70" src="" alt="" />
-        <div class="relative flex h-full transform items-end border-2 border-black  transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
-          <div class="px-8 pb-8 transition-opacity group-hover:absolute group-hover:opacity-0">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-12 w-12"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-            <h2 class="mt-4 text-2xl font-medium">Go around the world</h2>
-          </div>
-          <div class="absolute p-8 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100">
-            <h3 class="mt-4 text-2xl font-medium">Go around the world</h3>
-            <p class="mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate, praesentium voluptatem omnis atque culpa repellendus.
+        <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+          <img
+            src="https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            className="object-cover w-full h-64"
+            alt=""
+          />
+          <div className="p-5 border border-t-0">
+            <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
+              <a
+                href="/"
+                className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
+                aria-label="Category"
+                title="traveling"
+              >
+                traveling
+              </a>
+              <span className="text-gray-600">— 28 Dec 2020</span>
             </p>
-            <p class="mt-8 font-bold">Read more</p>
+            <a
+              href="/"
+              aria-label="Category"
+              title="Simple is better"
+              className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
+            >
+              Simple is better
+            </a>
+            <p className="mb-2 text-gray-700">
+              Sed ut perspiciatis unde omnis iste natus error sit sed quia
+              consequuntur magni voluptatem doloremque.
+            </p>
+            <a
+              href="/"
+              aria-label=""
+              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+              Learn more
+            </a>
           </div>
         </div>
-      </a>
-      </div>
-
-      {/* card three */}
-     <div className="">
-        <a href="/" class="group relative bg-slate-900 block h-96">
-        <span class="absolute inset-0 border-2 border-dashed border-black"></span>
-        <img className="w-50 h-70" src="" alt="" />
-        <div class="relative flex h-full transform items-end border-2 border-black  transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
-          <div class="px-8 pb-8 transition-opacity group-hover:absolute group-hover:opacity-0">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-12 w-12"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-            <h2 class="mt-4 text-2xl font-medium">Go around the world</h2>
-          </div>
-          <div class="absolute p-8 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100">
-            <h3 class="mt-4 text-2xl font-medium">Go around the world</h3>
-            <p class="mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate, praesentium voluptatem omnis atque culpa repellendus.
+        <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+          <img
+            src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            className="object-cover w-full h-64"
+            alt=""
+          />
+          <div className="p-5 border border-t-0">
+            <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
+              <a
+                href="/"
+                className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
+                aria-label="Category"
+                title="traveling"
+              >
+                traveling
+              </a>
+              <span className="text-gray-600">— 28 Dec 2020</span>
             </p>
-            <p class="mt-8 font-bold">Read more</p>
+            <a
+              href="/"
+              aria-label="Category"
+              title="Film It!"
+              className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
+            >
+              Film It!
+            </a>
+            <p className="mb-2 text-gray-700">
+              Sed ut perspiciatis unde omnis iste natus error sit sed quia
+              consequuntur magni voluptatem doloremque.
+            </p>
+            <a
+              href="/"
+              aria-label=""
+              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+              Learn more
+            </a>
           </div>
         </div>
-      </a>
       </div>
-   {/* card three end */}
-   </div> 
+    </div>
+   </div>
   );
 };
 

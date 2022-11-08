@@ -5,10 +5,13 @@ const ServiceDetails = () => {
     return (
       <div className='grid grid-cols-3 md:grid-cols-3 gap-4 mt-7 mb-10'>
         <h1>single details of the card</h1>
+        <section>
+            
+        </section>
 
-
- {/* review section */}
-     {/* <article class="rounded-lg border border-gray-100 p-4 shadow-sm transition hover:shadow-lg sm:p-6">
+     <section>
+      {/* review section */}
+      {/* <article class="rounded-lg border border-gray-100 p-4 shadow-sm transition hover:shadow-lg sm:p-6">
        <span class="inline-block rounded bg-blue-600 p-2 text-white">
         <svg
          xmlns="http://www.w3.org/2000/svg"
@@ -57,10 +60,11 @@ const ServiceDetails = () => {
       &rarr;
     </span>
   </a>
-</article>       */}
-   {/* review section end */}
-</div>
+  </article>       */}
+  {/* review section end */}
+    </section>
+  </div>
   );
-};
+ };
 
 export default ServiceDetails;

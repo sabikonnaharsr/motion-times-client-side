@@ -2,6 +2,7 @@ import React from "react";
 import Blogs from "../../Blogs/Blogs";
 import UseTitle from "../../Hooks/UseTitle";
 import OurContents from "../../OurSuccess/OurContents/OurContents";
+import WinningYear from "../../OurSuccess/WinnigYear/WinningYear";
 import About from "../../Services/About/About";
 import ClientReview from "../../Services/ClientReview/ClientReview";
 import ServiceDetails from "../../Services/ServiceDetails/ServiceDetails";
@@ -15,6 +16,7 @@ const Home = () => {
     <div>
       <Carousel></Carousel>
       <About></About>
+      <WinningYear></WinningYear>
       <OurContents></OurContents>
       <ServiceDetails></ServiceDetails>
       <Services></Services>

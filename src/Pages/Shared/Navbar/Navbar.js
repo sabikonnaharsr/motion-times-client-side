@@ -17,7 +17,7 @@ const Navbar = () => {
   const menuItems = 
   <>
   <li className='font-semibold'><Link to='/'>Home</Link></li>
-  <li className='font-semibold'><Link to='/'>Add Services</Link></li>
+  <li className='font-semibold '><Link to='/'>Add Services</Link></li>
   <li className='font-semibold'><Link to='/'>My Review</Link></li>
   <li className='font-semibold'><Link to='/'>Blogs</Link></li>
   {user?.email ?
@@ -55,7 +55,7 @@ const Navbar = () => {
           <Link to='/' href="/" className="btn btn-ghost normal-case text-xl">
            <span className='text-white text-medium font-bold'>
             {/* <img src={logo} alt="" /> */}
-            <h1 className=' font-serif text-2xl'>Motion Times</h1>
+            <h1 className='  text-3xl font-GreatVibes'>Motion Times</h1>
           </span>
           </Link>
       </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
 
        {user?.uid? 
           <div className='flex items-center'>
-               <h1>{user.displayName}</h1>
+               <h1 className='font-GreatVibes text-blue-700'>{user.displayName}</h1>
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
                 <img src= {user.photoURL}  alt=''/>

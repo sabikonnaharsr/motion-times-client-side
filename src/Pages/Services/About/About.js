@@ -4,7 +4,7 @@ import React from "react";
 const About = () => {
   return (
     <div>
-      <h1 className="text-2xl font-bold text-blue-500 mt-18 mb-20">
+      <h1 className="text-5xl font-bold font-GreatVibes text-blue-500 mt-20 mb-20">
         {" "}
         You’ve dreamed of this day for a lifetime. Make it unforgettable with
         wedding photography that reflects the unique couple that you are. Keep

@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 
 const Services = () => {
+    useEffect(()=>{
+        fetch('http://localhost:5000/services')
+        
+    }, [])
   return (
     
    <div>

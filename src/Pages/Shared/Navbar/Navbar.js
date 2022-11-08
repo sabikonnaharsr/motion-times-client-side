@@ -20,10 +20,9 @@ const Navbar = () => {
   <li className='font-semibold'><Link to='/'>Add Services</Link></li>
   <li className='font-semibold'><Link to='/'>My Review</Link></li>
   <li className='font-semibold'><Link to='/'>Blogs</Link></li>
-
   {user?.email ?
-  <>
-  <li className='font-semibold'><Link to='/orders'>Orders</Link></li>
+  <> 
+  <li className='font-semibold'><Link to='/orders'>Services</Link></li>
   </>
   : <li className='font-semibold'><Link to='/login'>login</Link></li>
   }
@@ -56,7 +55,7 @@ const Navbar = () => {
           <Link to='/' href="/" className="btn btn-ghost normal-case text-xl">
            <span className='text-white text-medium font-bold'>
             {/* <img src={logo} alt="" /> */}
-            <h1 className='text-white font-serif text-3xl'>Light And Motion Times</h1>
+            <h1 className=' font-serif text-2xl'>Motion Times</h1>
           </span>
           </Link>
       </div>

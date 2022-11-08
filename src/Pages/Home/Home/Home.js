@@ -1,7 +1,9 @@
 import React from "react";
+import Blogs from "../../Blogs/Blogs";
 import UseTitle from "../../Hooks/UseTitle";
 import OurContents from "../../OurSuccess/OurContents/OurContents";
 import About from "../../Services/About/About";
+import ClientReview from "../../Services/ClientReview/ClientReview";
 import ServiceDetails from "../../Services/ServiceDetails/ServiceDetails";
 import OrganizationDetails from "../../Services/ServiceDetails/ServiceDetails";
 import Services from "../../Services/Services/Services";
@@ -11,14 +13,12 @@ const Home = () => {
   UseTitle("Home");
   return (
     <div>
-      {/* // 0C0C0C black color code. */}
-      <h1>home</h1>
       <Carousel></Carousel>
       <About></About>
       <OurContents></OurContents>
-      <OrganizationDetails></OrganizationDetails>
-     <ServiceDetails></ServiceDetails>
+      <ServiceDetails></ServiceDetails>
       <Services></Services>
+      <ClientReview></ClientReview>
     </div>
   );
 };

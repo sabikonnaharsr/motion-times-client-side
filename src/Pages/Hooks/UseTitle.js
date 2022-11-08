@@ -2,7 +2,7 @@ import  React, { useEffect } from 'react';
 
 const UseTitle = (title) => {
     useEffect(() =>  {
-        document.title = `${title}  -Sequel Extract`;
+        document.title = `${title}  - Motion Times`;
        
     },[title])
 };

@@ -6,6 +6,7 @@ import Main from "../../Layout/Main";
 import ErrorPage from "../../ErrorPage/ErrorPage";
 import ServiceDetails from '../../Services/ServiceDetails/ServiceDetails';
 import Services from "../../Services/Services/Services";
+import Blogs from "../../Blogs/Blogs";
 
 
 const router = createBrowserRouter([
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
             {
                 path: '/services',
                 element: <Services></Services>
+
+            },
+            {
+                path: '/blogs',
+                element: <Blogs/>
 
             },
             {

@@ -4,7 +4,15 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: 
+      {
+        DancingScript: ['Dancing Script', "cursive"],
+        GreatVibes:['Great Vibes', 'cursive'],
+        Tangerine:['Tangerine', 'cursive']
+      }
+      
+    },
   },
   plugins: [require("daisyui")],
 }

@@ -17,8 +17,9 @@ const Navbar = () => {
   const menuItems = 
   <>
   <li className='font-semibold'><Link to='/'>Home</Link></li>
-  <li className='font-semibold'><Link to='/'>About</Link></li>
-  <li className='font-semibold'><Link to='/'>Contact</Link></li>
+  <li className='font-semibold'><Link to='/'>Add Services</Link></li>
+  <li className='font-semibold'><Link to='/'>My Review</Link></li>
+  <li className='font-semibold'><Link to='/'>Blogs</Link></li>
 
   {user?.email ?
   <>

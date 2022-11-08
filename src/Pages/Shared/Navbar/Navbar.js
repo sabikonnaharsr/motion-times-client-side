@@ -55,6 +55,7 @@ const Navbar = () => {
           <Link to='/' href="/" className="btn btn-ghost normal-case text-xl">
            <span className='text-white text-medium font-bold'>
             {/* <img src={logo} alt="" /> */}
+            <h1 className='text-white font-serif text-3xl'>Light And Motion Times</h1>
           </span>
           </Link>
       </div>

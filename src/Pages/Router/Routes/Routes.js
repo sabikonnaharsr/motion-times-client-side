@@ -7,6 +7,7 @@ import ErrorPage from "../../ErrorPage/ErrorPage";
 import ServiceDetails from '../../Services/ServiceDetails/ServiceDetails';
 import Services from "../../Services/Services/Services";
 import Blogs from "../../Blogs/Blogs";
+import SuccessfulClient from "../../OurSuccess/SuccessfulClient/SuccessfulClient";
 
 
 const router = createBrowserRouter([
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
                 path: '/blogs',
                 element: <Blogs/>
 
+            },
+            {
+                path: '/successfulClient',
+                element: <SuccessfulClient></SuccessfulClient>
             },
             {
                 path: '*',

@@ -11,7 +11,7 @@ const About = () => {
         the memory of it alive forever with creative images that tell your love
         story to the world!
       </h1>
-      <div className="grid grid-cols-3 md:grid-cols-3 gap-4 mb-10 mt-10">
+      <div className=" grid grid-cols md:grid-cols-3 gap-4 lg:grid-cols-3 mb-10 mt-10">
         {/* card one */}
       <div >
         <a href="/" class="group relative bg-slate-900 block h-96">

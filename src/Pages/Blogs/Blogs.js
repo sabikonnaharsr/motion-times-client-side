@@ -6,7 +6,7 @@ const Blogs = () => {
     return (
         
        <div>  
-        <h1 className='text-3xl mb-10 mt-10 text-blue-800 font-bold'>This is My Blog Contents</ h1>
+        <h1 className='mb-10 mt-10 text-blue-800 text-6xl font-bold font-GreatVibes'>This is About Blog Contents</ h1>
          <div className='grid grid-cols md:grid-cols-3 lg:grid-cols-2 gap-4  mb-20'>     
          <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-base-100 squire-box">
           <div className="collapse-title text-xl font-medium">

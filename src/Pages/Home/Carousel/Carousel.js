@@ -4,7 +4,7 @@ import React from 'react';
 const Carousel = () => {
     return (
     <div className='bg-slate-700'>
-     <div className="carousel w-full mt-10 mb-8">
+     <div className="carousel w-full mb-8">
      <div id="slide1" className="carousel-item relative w-full">
      <img className='w-full' src= "https://occ-0-2568-38.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABZCUt5x0533BRUcksK2zDqMhAaEVdFFMOGu0Leb6DzeGQKzZT-M9c1Fpy9MvHsCAfk_RSSWjeNWushLASxr-jL-kK_AP9yS5nT5V.jpg?r=52f" alt=''/>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

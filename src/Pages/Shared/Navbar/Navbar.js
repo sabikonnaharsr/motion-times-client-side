@@ -22,7 +22,7 @@ const Navbar = () => {
   <li className='font-semibold'><Link to='/'>Blogs</Link></li>
   {user?.email ?
   <> 
-  <li className='font-semibold'><Link to='/orders'>Services</Link></li>
+  <li className='font-semibold'><Link to='/services'>Services</Link></li>
   </>
   : <li className='font-semibold'><Link to='/login'>login</Link></li>
   }
@@ -32,15 +32,15 @@ const Navbar = () => {
    <li><Link onClick={handleLogout} className='font-semibold'>Log Out</Link></li>
     : 
     <>
-    <li className='font-semibold'><Link to='/signup'>Sign Up</Link></li>
-     <li className='font-semibold'><Link to='/login'>Login</Link></li>
+    <li className='font-semibold '><Link to='/signup'>Sign Up</Link></li>
+     <li className='font-semibold '><Link to='/login'>Login</Link></li>
     </>
   }
   
   </>
  
     return (
-      <div className="navbar h-12 mt-12 bg-base-100">
+      <div className="navbar h-28 bg-slate-900">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">

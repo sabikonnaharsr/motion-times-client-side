@@ -3,6 +3,7 @@ import { FaStar } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const AllServicesSingleCard = ({allService}) => {
+  console.log(allService)
     const {title, price, img, description} = allService;
     return (
    <div className="gird grid-cols md:grid-cols-3 lg:grid-cols-3 gap-4">
@@ -52,7 +53,7 @@ const AllServicesSingleCard = ({allService}) => {
       </div>
     </div>
   </div>
-    );
+  );
 };
 
 export default AllServicesSingleCard;

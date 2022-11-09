@@ -5,14 +5,14 @@ import AllServicesSingleCard from './AllServicesSingleCard';
 
 const AllServices = () => {
     const [allServices, setAllServices] = useState([])
-  
-    UseTitle('All Services');
 
+    UseTitle('All Services');
     useEffect(() => {
-        fetch('http://localhost:5000/allServices')
+        fetch('http://localhost:5000/threeServices')
         .then(res => res.json())
-        .then(data => setAllServices(data))
-    }, [])
+        .then(data => console.log(data))
+    },[])
+
 
 
     return (

@@ -44,7 +44,7 @@ const router = createBrowserRouter([
 
             },
             {
-                path: '/allServiceSingleCard',
+                path: '/allServicesSingleCard',
                 element: <AllServicesSingleCard/>
             },
             {

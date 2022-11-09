@@ -58,7 +58,7 @@ const UserContext = ({ children }) => {
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      console.log("gskjg", currentUser);
+      // console.log("gskjg", currentUser);
       setUser(currentUser);
       setLoading(false);
     });

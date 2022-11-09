@@ -73,7 +73,7 @@ const Services = () => {
       </div>
     </div>)
     }
-  <Link to='/AllServicesSingleCard'><button className="text-3xl text-rose-600 font-sans btn btn-ghost px-8 py-1">All Services</button></Link>
+  <Link to='/allServicesSingleCard'><button className="text-3xl text-rose-600 font-sans btn btn-ghost px-8 py-1">All Services</button></Link>
    </div>
    </div>
   );

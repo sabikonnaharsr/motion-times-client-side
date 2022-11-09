@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
+import { PhotoProvider, PhotoView } from "react-photo-view";
 import { Link } from "react-router-dom";
 import UseTitle from "../../Hooks/UseTitle";
 
@@ -19,17 +20,17 @@ const Services = () => {
 
   return (
     <div >
-   <div >
+   <div className="my-6 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     {
       services.map(service =>    <div className=" px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+      <div className="  sm:mx-auto lg:max-w-full">
         <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-          <img
+         <PhotoProvider><PhotoView src={service.img}><img
             
             src= {service.img}
             className="object-cover w-full h-64"
             alt=""
-          />
+          /></PhotoView></PhotoProvider> 
           <div className="p-5 border border-t-0">
             <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
               <a
@@ -46,11 +47,11 @@ const Services = () => {
               href="/"
               aria-label="Category"
               title="Visit the East"
-              className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
+              className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700 text-rose-600"
             >
               {service.title}
             </a>
-            <p className="mb-2 text-gray-700">
+            <p className="mb-2 text-gray-900">
               {service.description.slice(0,100)  }... 
             </p>
             <Link
@@ -73,7 +74,7 @@ const Services = () => {
       </div>
     </div>)
     }
-  <Link to='/allServicesSingleCard'><button className="text-3xl text-rose-600 font-sans btn btn-ghost px-8 py-1">All Services</button></Link>
+  <Link to='/allServicesSingleCard'><button className="text-3xl mb-6 text-rose-600 font-sans btn btn-ghost px-10 m-5">All Services</button></Link>
    </div>
    </div>
   );

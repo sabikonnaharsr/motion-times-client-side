@@ -2,12 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import img1 from '../../../Assets/service/service1.png'
 import { FaStar } from 'react-icons/fa';
+import UseTitle from '../../Hooks/UseTitle';
 
 
 const ServiceDetails = () => {
+  UseTitle('Service Details')
     return (
     
-      <div className='grid grid-cols md:grid-cols-3 gap-4 mt-7 mb-10'>
+      <div className='grid gap-4 md:grid-cols-2 mt-6'>
         <h1> title</h1>
         <section>
        <article
@@ -47,76 +49,25 @@ const ServiceDetails = () => {
                 class="block transition group-hover:translate-x-0.5"
               >
                 &rarr;
-              </span>
-            </a>
-          </div>
-        </article>
-        </section>
-            
-    
-       {/* <ClientReview></ClientReview> */}
-    <div className=''>
-     <h1>review into service details</h1>
-      {/* <section>
-       <article class="rounded-lg border border-gray-100 p-4 shadow-sm transition hover:shadow-lg sm:p-6">
-        <span class="inline-block rounded p-2">
-          
-       </span>
-
-       <a href="/">
-        <h3 class="mt-0.5 text-lg font-medium text-gray-900">
-           user email
-       </h3>
-    </a>
-       <a href="/">
-        <h3 class="mt-0.5 text-lg font-medium text-gray-900">
-           service name
-       </h3>
-     </a>
-     <p class="mt-2 text-sm leading-relaxed text-gray-500 line-clamp-3">
-         Always available, extremely knowledgeable, and a tremendous "can-do" attitude. Our company was on a tight timeline and strict budget to create a first-class mobile interpretation app, and Will was the perfect partner. His guidance and advice was invaluable in producing that app which easily exceeded my expectations... the entire company was thrilled with it! Without any hesitation... highly recommended.
-       </p>
-         <div className='gap-4 '>
-         <Link to="/"
-            class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-              <button className='btn btn-ghost'>
-              Delete
-              </button>
-            <span
-            aria-hidden="true"
-            class="block transition group-hover:translate-x-0.5" >
-            &rarr;
-         </span>
-          </Link>
-         <Link to="/"
-            class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-              <button className='btn btn-ghost'> Update</button>
-            <span
-            aria-hidden="true"
-            class="block transition group-hover:translate-x-0.5" >
-            &rarr;
-          </span>
-          </Link>
-
+            </span>
+           </a>
          </div>
-        
-  </article> 
-     </section> */}
-  
- </div>
-
+       </article>
+     </section>
 
  {/* client review  */}
-    <div className='grid'>
-    <article class="rounded-sm bg-white p-6 ring  text-center ring-indigo-50 sm:p-8">
-  <div class="flex items-start">
-    <div
+<div>
+  <h1 className='text-3xl font-bold text-white mb-4'>Please put your comment here</h1>
+  <div className='grid'>
+   <article class="rounded-sm bg-white p-6 ring  text-center ring-indigo-50 sm:p-8">
+   <div class="flex items-start">
+     <div
       class="hidden sm:grid sm:h-20 sm:w-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2 sm:border-indigo-500"
       aria-hidden="true">
         <img className='w-20 h-20 btn-circle rounded-full items-center' src={img1} alt="" />
-    </div>
+     </div>
 
-    <div class="sm:ml-8">
+     <div class="sm:ml-8">
        <div className='  text-blue-600 font-bold'>
        <Link to='/'>
        <strong
@@ -181,9 +132,36 @@ const ServiceDetails = () => {
  
 </article>
 
-    </div>
 </div>
-     );
-  };
+{/* form section review */}
+<div>
+  <label
+    for="UserEmail"
+    class="block mt-5 font-bold text-2xl text-gray-700 dark:text-gray-200"
+  >
+    Write Here....
+  </label>
+
+  <input
+    type="email"
+    id="UserEmail"
+    placeholder="Clients Review"
+    class="mt-1 text-center w-full h-20 border-gray-200 shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:text-white sm:text-sm"
+  />
+</div>
+{/* button  */}
+<span
+  class="inline-flex -space-x-px overflow-hidden  mb-4 mt-3 rounded-md border bg-white shadow-sm dark:border-gray-800 dark:bg-gray-900"
+>
+  <button
+    class="inline-block px-24 py-8  text-sm font-medium text-gray-700 dark:hover:bg-gray-800 hover:bg-gray-50 focus:relative dark:text-gray-200 "
+  >
+    Please Comment Below
+  </button>
+</span>
+ </div>
+</div>
+  );
+ };
 
 export default ServiceDetails;

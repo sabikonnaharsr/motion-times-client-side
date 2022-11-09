@@ -4,22 +4,23 @@ import Services from '../Services/Services';
 import AllServicesSingleCard from './AllServicesSingleCard';
 
 const AllServices = () => {
-    const [allServices, setAllServices] = useState([])
+    // UseTitle('All Services');
+    const [allServices, setAllServices] = useState()
 
-    UseTitle('All Services');
+    
     useEffect(() => {
-        fetch('http://localhost:5000/threeServices')
+        fetch('http://localhost:5000/allServices')
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => setAllServices(data))
     },[])
 
 
 
     return (
-        <div>
+        <div className="my-6 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {
                 allServices.map(allService => <AllServicesSingleCard 
-                key={allServices._id}
+                key={allService._id}
                 allService={allService}
                 
                 ></AllServicesSingleCard>)

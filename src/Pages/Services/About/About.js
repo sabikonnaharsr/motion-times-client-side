@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 const About = () => {
@@ -40,8 +41,7 @@ const About = () => {
             <h3 class="mt-4 text-2xl font-medium">Go around the world</h3>
 
             <p class="mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate, praesentium voluptatem omnis atque culpa repellendus.
+            A marriage based on love and respect doesn't just happen. Both spouses have to do their part. Below are some important keys to work on each day to make your marriage successful.
             </p>
 
             <p class="mt-8 font-bold">Read more</p>
@@ -75,8 +75,7 @@ const About = () => {
           <div class="absolute p-8 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100">
             <h3 class="mt-4 text-2xl font-medium">Go around the world</h3>
             <p class="mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate, praesentium voluptatem omnis atque culpa repellendus.
+            Talking with your spouse is one of the best ways to keep your marriage healthy and successful. Be honest about what you're feeling, but be kind and respectful when you communicate. Part of good communication is being a good listener and taking the time to understand what it is your spouse wants and needs from you.
             </p>
             <p class="mt-8 font-bold">Read more</p>
           </div>
@@ -110,10 +109,9 @@ const About = () => {
           <div class="absolute p-8 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100">
             <h3 class="mt-4 text-2xl font-medium">Go around the world</h3>
             <p class="mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate, praesentium voluptatem omnis atque culpa repellendus.
+            Appreciate each other, your relationship, your family, and your lives together. Show gratitude when your partner cooks dinner, helps the kids with their homework, or does the grocery shopping. It may help to take a few minutes each evening to tell each other at least one thing you appreciated that day.
             </p>
-            <p class="mt-8 font-bold">Read more</p>
+            <Link to='/allServices' class="mt-8 text font-bold">Read more</Link>
           </div>
         </div>
       </a>

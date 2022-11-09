@@ -12,7 +12,7 @@
 - React 
 - Firebase Authentication
 - Context Api
-- react-photo-
+- react-photo-view
 
 
 

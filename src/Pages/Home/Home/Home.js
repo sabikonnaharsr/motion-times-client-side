@@ -23,7 +23,16 @@ const Home = () => {
       <OurContents></OurContents>
       <ServiceDetails></ServiceDetails>
       <Services></Services>
-      <ClientReview></ClientReview>
+
+      {/* <PhotoProvider>
+        <PhotoView src={image}>
+          <img
+            src={image}
+            alt=""
+            className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500 cursor: zoom-in"
+          />
+        </PhotoView>
+      </PhotoProvider> */}
     </div>
   );
 };

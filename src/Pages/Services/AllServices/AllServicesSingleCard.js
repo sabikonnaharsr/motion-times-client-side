@@ -3,12 +3,12 @@ import { FaStar } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const AllServicesSingleCard = ({allService}) => {
-  console.log(allService)
+  
     const {title, price, img, description} = allService;
     return (
    <div className="gird grid-cols md:grid-cols-3 lg:grid-cols-3 gap-4">
-     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+     <div className="px-4 py-16 mx-auto md:px-24 lg:px-8 lg:py-20">
+      <div className=" ">
         <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
           <img
             

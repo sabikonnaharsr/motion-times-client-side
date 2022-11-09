@@ -7,14 +7,39 @@ import UseTitle from '../../Hooks/UseTitle';
 
 const ServiceDetails = () => {
   UseTitle('Service Details')
+  
+  const clientComments = (e) => {
+    e.preventDefault()
+    const form = e.target;
+    const text = form.name.value;
+    const comments = {
+      name: 'name',
+      email: 'email',
+      price: '',
+      ratings: '',
+      img: 'img',
+      message: text,
+
+    }
+
+    fetch('http://localhost:5000/clientReview', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(comments)
+    })
+    .then(res => res.json())
+    .then(data => console.log(data))
+  }
+
     return (
     
       <div className='grid gap-4 md:grid-cols-2 mt-6'>
         <h1> title</h1>
         <section>
        <article
-        class="overflow-hidden rounded-lg border border-gray-100 shadow-sm dark:border-gray-800 dark:shadow-gray-700/25"
-      >
+        class="overflow-hidden rounded-lg border border-gray-100 shadow-sm dark:border-gray-800 dark:shadow-gray-700/25">
         <img
           alt="Office"
           src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
@@ -59,7 +84,7 @@ const ServiceDetails = () => {
 <div>
   <h1 className='text-3xl font-bold text-white mb-4'>Please put your comment here</h1>
   <div className='grid'>
-   <article class="rounded-sm bg-white p-6 ring  text-center ring-indigo-50 sm:p-8">
+   <article class="rounded-sm bg-white p-6 ring text-center ring-indigo-50 sm:p-8">
    <div class="flex items-start">
      <div
       class="hidden sm:grid sm:h-20 sm:w-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2 sm:border-indigo-500"
@@ -132,9 +157,15 @@ const ServiceDetails = () => {
  
 </article>
 
+
+
 </div>
+
+
+
 {/* form section review */}
-<div>
+ <form onSubmit={clientComments}>
+ <div>
   <label
     for="UserEmail"
     class="block mt-5 font-bold text-2xl text-gray-700 dark:text-gray-200"
@@ -143,13 +174,14 @@ const ServiceDetails = () => {
   </label>
 
   <input
-    type="email"
+    name='name'
+    type="text"
     id="UserEmail"
     placeholder="Clients Review"
+    required
     class="mt-1 text-center w-full h-20 border-gray-200 shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:text-white sm:text-sm"
   />
 </div>
-{/* button  */}
 <span
   class="inline-flex -space-x-px overflow-hidden  mb-4 mt-3 rounded-md border bg-white shadow-sm dark:border-gray-800 dark:bg-gray-900"
 >
@@ -159,6 +191,11 @@ const ServiceDetails = () => {
     Please Comment Below
   </button>
 </span>
+ </form>
+
+
+{/* button  */}
+
  </div>
 </div>
   );

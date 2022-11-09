@@ -26,7 +26,7 @@ const OurContents = () => {
                   />
                 </svg>
               </div>
-              <p className="mb-2 font-bold">Football Sports</p>
+              <p className="mb-2 font-bold">Traditional Religious</p>
               <p className="text-sm leading-5 text-gray-400">
                 Sed ut perspiciatis unde omnis iste. Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit.
@@ -51,7 +51,7 @@ const OurContents = () => {
                   />
                 </svg>
               </div>
-              <p className="mb-2 font-bold">Bowling Sports</p>
+              <p className="mb-2 font-bold">Civil Ceremony Wedding.</p>
               <p className="text-sm leading-5 text-gray-400">
                 Disrupt inspire and think tank, social entrepreneur but
                 preliminary thinking think tank compelling.
@@ -76,7 +76,7 @@ const OurContents = () => {
                   />
                 </svg>
               </div>
-              <p className="mb-2 font-bold">Cycling Sports</p>
+              <p className="mb-2 font-bold">Formal Wedding.</p>
               <p className="text-sm leading-5 text-gray-400">
                 A slice of heaven. O for awesome, this chocka full cuzzie is as
                 rip-off as a cracker.
@@ -101,7 +101,7 @@ const OurContents = () => {
                   />
                 </svg>
               </div>
-              <p className="mb-2 font-bold">Weight Lifting Sports</p>
+              <p className="mb-2 font-bold">Destination Wedding.</p>
               <p className="text-sm leading-5 text-gray-400">
                 Meanwhile, in behind the bicycle shed, Hercules Morse, as big as
                 a horse.
@@ -126,7 +126,7 @@ const OurContents = () => {
                   />
                 </svg>
               </div>
-              <p className="mb-2 font-bold">Golf Sports</p>
+              <p className="mb-2 font-bold">Cruise Wedding.</p>
               <p className="text-sm leading-5 text-gray-400">
                 Disrupt inspire and think tank, social entrepreneur but
                 preliminary thinking think tank compelling.
@@ -151,7 +151,7 @@ const OurContents = () => {
                   />
                 </svg>
               </div>
-              <p className="mb-2 font-bold">Hockey Sports</p>
+              <p className="mb-2 font-bold">Elopement Wedding.</p>
               <p className="text-sm leading-5 text-gray-400">
                 A business big enough that it could be listed on the NASDAQ goes
                 belly up.
@@ -201,7 +201,7 @@ const OurContents = () => {
                   />
                 </svg>
               </div>
-              <p className="mb-2 font-bold">Martial Arts</p>
+              <p className="mb-2 font-bold">Vintage Style</p>
               <p className="text-sm leading-5 text-gray-400">
                 Webtwo ipsum orkut reddit meebo skype vimeo jajah spock empressr
                 zimbra, mobly napster.

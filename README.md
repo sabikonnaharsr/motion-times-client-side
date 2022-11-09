@@ -21,7 +21,7 @@
 - Authentication With Google,GitHub Email and Password
 - Protected Route And Public Route 
 - Error Handling and Wonderful Toast Message
-- 
+- Crud Operation
 - 
 
 

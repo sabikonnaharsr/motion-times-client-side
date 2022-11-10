@@ -5,12 +5,14 @@ import UseTitle from "../Hooks/UseTitle";
 import ReviewCard from "../ReviewCard/ReviewCard";
 
 const MyReview = () => {
-  UseTitle('My Review')
+  UseTitle("My Review");
   const { user } = useContext(AuthContext);
   console.log(user);
   const [review, setReview] = useState([]);
 
-  console.log(`https://sequel-extract-server.vercel.app/reviewByMail?email=${user?.email}`);
+  console.log(
+    `https://sequel-extract-server.vercel.app/reviewByMail?email=${user?.email}`
+  );
 
   useEffect(() => {
     fetch(`http://localhost:5000/reviewByMail?email=${user?.email}`)
@@ -39,10 +41,10 @@ const MyReview = () => {
 
   return (
     <div>
-      <h2 className="text-5xl my-6">You have {review.length} Orders</h2>
+      <h2 className="text-5xl my-6">You have {review?.length} Orders</h2>
 
       <div className="grid grid-cols-2 gap-5">
-        {review.map((r) => (
+        {review?.map((r) => (
           <ReviewCard
             key={r._id}
             r={r}

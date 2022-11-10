@@ -45,11 +45,11 @@ const Login = () => {
 
     return (
     <div>
-     <section className="bg-gray-100 mb-12 mt-16 rounded-lg">
+     <section className="bg-slate-800 rounded-lg">
       <div className="mx-auto lg:w-2/5 px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-x-16 gap-y-8">
+        <div className="grid grid-cols-1 gap-x-16 bg-slate-900 gap-y-8">
           <div className="rounded-lgp-8 shadow-lg lg:col-span-3 lg:p-12">
-            <form onSubmit={handleLoginSubmit} className="space-y-4 p-5">
+            <form onSubmit={handleLoginSubmit} className=" space-y-4 p-5">
               <div>
                 <label className="sr-only" htmlFor="name">
                   Name
@@ -131,7 +131,7 @@ const Login = () => {
                   New to create Account
                   <span>
                     {""}
-                  <Link to="/signup" className="text-blue-700 font-medium underline">
+                  <Link to="/signup" className="text-white font-medium underline">
                     {""}
                     Sign Up
                   </Link>

@@ -21,7 +21,7 @@ const Home = () => {
       <ClientReview></ClientReview>
       <WinningYear></WinningYear>
       <OurContents></OurContents>
-      <ServiceDetails></ServiceDetails>
+    
       <Services></Services>
 
       {/* <PhotoProvider>

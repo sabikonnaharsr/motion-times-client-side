@@ -4,13 +4,15 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 const Footer = () => {
     return (
      < div>
+         
          <footer className="w-full footer  p-32 bg-slate-900 text-base-content  ">
          <div>
           <p>
             {/* <img src={logo} alt="" /> */}
-            ACME Industries Ltd.
+            New York Bridal Pair
             <br />
             sabikonnahar.sr@gmail.com
+            <br /> © 2010 to 2022 all rights reserved.
           </p>
           <div className="flex gap-6 mt-5 justify-center text-3xl">
             <span className="rounded-circle"><FaFacebook></FaFacebook></span>

@@ -5,7 +5,7 @@ import AllServicesSingleCard from './AllServicesSingleCard';
 
 const AllServices = () => {
     // UseTitle('All Services');
-    const [allServices, setAllServices] = useState()
+    const [allServices, setAllServices] = useState([])
 
     
     useEffect(() => {

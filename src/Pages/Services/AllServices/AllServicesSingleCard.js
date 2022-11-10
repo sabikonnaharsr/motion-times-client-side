@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const AllServicesSingleCard = ({allService}) => {
   
-    const {title, price, img, description} = allService;
+    const {title, price, img, description, _id} = allService;
     return (
    <div className="gird grid-cols md:grid-cols-3 lg:grid-cols-3 gap-4">
      <div className="px-4 py-16 mx-auto md:px-24 lg:px-8 lg:py-20">
@@ -37,7 +37,7 @@ const AllServicesSingleCard = ({allService}) => {
               {title}
             </a>
             <p className="mb-2 text-gray-700">
-              {description.slice(0,100)  }... 
+              {description?.slice(0,100)  }... 
             </p>
        
             <span className="flex items-center text-amber-400">
@@ -46,7 +46,8 @@ const AllServicesSingleCard = ({allService}) => {
                 <FaStar className="flex items-center"></FaStar>
                 <FaStar></FaStar>
                 <FaStar></FaStar>
-             </span>    
+             </span>  
+             <Link to={`/services/${_id}`}><button className='text-rose-600 text-2xl font-bold'>View Details</button></Link>  
           </div>
         </div>
       

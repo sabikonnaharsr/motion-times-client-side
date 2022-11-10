@@ -93,9 +93,9 @@ const SignUp = () => {
 
   return (
     <div>
-      <section className="bg-gray-100 mb-12 mt-16 rounded-lg">
+      <section className="bg-slate-800 rounded-lg">
         <div className="mx-auto lg:w-2/5 px-4 py-16 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-x-16 gap-y-8">
+          <div className="grid grid-cols-1 bg-slate-900 gap-x-16 gap-y-8">
             <div className="rounded-lgp-8 shadow-lg lg:col-span-3 lg:p-12">
               <form onSubmit={handleSubmit} className="space-y-4 p-5">
                 <div>
@@ -188,7 +188,7 @@ const SignUp = () => {
                     Already have an account?
                     <Link
                       to="/login"
-                      className="text-sky-700 font-semibold underline" >
+                      className="text-white font-semibold underline" >
                       Log in
                     </Link>
                     .
@@ -197,14 +197,14 @@ const SignUp = () => {
                     <span className=" flex justify-center  text-3xl gap-4 mt-3 text-center">
                       <Link
                         onClick={handleGoogleSignIn}
-                        className="text-blue-500"
+                        className="text-white"
                       >
                         <FaGoogle></FaGoogle>{" "}
                       </Link>
-                      <Link onClick={handleGithubSingIn} className="text-black ">
+                      <Link onClick={handleGithubSingIn} className="text-white ">
                         <FaGithub></FaGithub>
                       </Link>
-                      <Link className="text-blue-500">
+                      <Link className="text-white">
                         <FaFacebook></FaFacebook>
                       </Link>
                     </span>

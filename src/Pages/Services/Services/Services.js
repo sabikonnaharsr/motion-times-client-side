@@ -52,7 +52,7 @@ const Services = () => {
               {service.title}
             </a>
             <p className="mb-2 text-gray-900">
-              {service.description.slice(0,100)  }... 
+              {service?.description?.slice(0,100)  }... 
             </p>
             <Link
               to={`/allServices/:${service._id}`}
@@ -74,8 +74,17 @@ const Services = () => {
       </div>
     </div>)
     }
-  <Link to='/allServicesSingleCard'><button className="text-3xl mb-6 text-rose-600 font-sans btn btn-ghost px-10 m-5">All Services</button></Link>
+  <Link className="" >
+    <div class="mt-12 text-center">
+      <Link
+        to='/allServices'
+        class="mt-8 inline-flex items-center rounded border border-pink-600 bg-pink-600 px-8 py-3 text-white hover:bg-transparent focus:outline-none focus:ring active:text-pink-500"
+      >
+        {/* <span class="text-sm text-center font-medium px-16"> View All </span> */}
+      </Link>
+    </div></Link>
    </div>
+   
    </div>
   );
 };

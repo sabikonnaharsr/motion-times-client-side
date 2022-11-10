@@ -1,31 +1,26 @@
 import React from 'react';
+import UseTitle from '../../Hooks/UseTitle';
+
 
 const OurContents = () => {
+  UseTitle('OurClients')
+
+
     return (
       <div>
-      <h1> about section my content</h1>
-      <div className="">
+      <div>
+      <h1 className='text-5xl text-blue-600 font-semibold mt-10'> Our Packages</h1>
+      <p className='text-4xl text-blue-600'>________    ________</p>
       <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="absolute inset-x-0 top-0 items-center justify-center hidden overflow-hidden md:flex md:inset-y-0">
         </div>
         <div className="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-slate-900 rounded shadow-xl group hover:shadow-2xl">
             <div className="p-5">
-              <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-slate-700">
-                <svg
-                  className="w-8 h-8 text-deep-purple-accent-400"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
+               <div className='flex items-center'>
+            
+                   <h1 className='text-7xl text-blue-700 font-bold text-center'>10</h1>
+               </div>
               <p className="mb-2 font-bold">Traditional Religious</p>
               <p className="text-sm leading-5 text-gray-400">
                 Sed ut perspiciatis unde omnis iste. Lorem ipsum dolor sit amet,
@@ -36,20 +31,8 @@ const OurContents = () => {
           </div>
           <div className="flex flex-col justify-between bg-slate-900 overflow-hidden text-left transition-shadow duration-200 rounded shadow-xl group hover:shadow-2xl">
             <div className="p-5">
-              <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-slate-700">
-                <svg
-                  className="w-8 h-8 text-deep-purple-accent-400"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
+              <div className="flex items-center justify-center text-blue-700 font-bold text-7xl">
+                 450+
               </div>
               <p className="mb-2 font-bold">Civil Ceremony Wedding.</p>
               <p className="text-sm leading-5 text-gray-400">
@@ -61,20 +44,8 @@ const OurContents = () => {
           </div>
           <div className="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-slate-900 rounded shadow-xl group hover:shadow-2xl">
             <div className="p-5">
-              <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-slate-700">
-                <svg
-                  className="w-8 h-8 text-deep-purple-accent-400"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
+              <div className="flex items-center justify-center text-7xl font-bold text-blue-700">
+                 99+
               </div>
               <p className="mb-2 font-bold">Formal Wedding.</p>
               <p className="text-sm leading-5 text-gray-400">
@@ -86,20 +57,8 @@ const OurContents = () => {
           </div>
           <div className="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-slate-900 rounded shadow-xl group hover:shadow-2xl">
             <div className="p-5">
-              <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-slate-700">
-                <svg
-                  className="w-8 h-8 text-deep-purple-accent-400"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
+              <div className="flex items-center justify-center text-blue-700 font-bold text-7xl">
+                  999+
               </div>
               <p className="mb-2 font-bold">Destination Wedding.</p>
               <p className="text-sm leading-5 text-gray-400">
@@ -108,106 +67,7 @@ const OurContents = () => {
               </p>
             </div>
             <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
-          </div>
-          <div className="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-slate-900 rounded shadow-xl group hover:shadow-2xl">
-            <div className="p-5">
-              <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-slate-700">
-                <svg
-                  className="w-8 h-8 text-deep-purple-accent-400"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-              <p className="mb-2 font-bold">Cruise Wedding.</p>
-              <p className="text-sm leading-5 text-gray-400">
-                Disrupt inspire and think tank, social entrepreneur but
-                preliminary thinking think tank compelling.
-              </p>
-            </div>
-            <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
-          </div>
-          <div className="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-slate-900 rounded shadow-xl group hover:shadow-2xl">
-            <div className="p-5">
-              <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-slate-700">
-                <svg
-                  className="w-8 h-8 text-deep-purple-accent-400"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-              <p className="mb-2 font-bold">Elopement Wedding.</p>
-              <p className="text-sm leading-5 text-gray-400">
-                A business big enough that it could be listed on the NASDAQ goes
-                belly up.
-              </p>
-            </div>
-            <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
-          </div>
-          <div className="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-slate-900 rounded shadow-xl group hover:shadow-2xl">
-            <div className="p-5">
-              <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-slate-700">
-                <svg
-                  className="w-8 h-8 text-deep-purple-accent-400"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-              <p className="mb-2 font-bold">Shooting Sports</p>
-              <p className="text-sm leading-5 text-gray-400">
-                Lookout flogging bilge rat main sheet bilge water nipper fluke
-                to go on account heave down clap of thunder.
-              </p>
-            </div>
-            <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
-          </div>
-          <div className="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-slate-900 rounded shadow-xl group hover:shadow-2xl">
-            <div className="p-5">
-              <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-slate-700">
-                <svg
-                  className="w-8 h-8 text-deep-purple-accent-400"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-              <p className="mb-2 font-bold">Vintage Style</p>
-              <p className="text-sm leading-5 text-gray-400">
-                Webtwo ipsum orkut reddit meebo skype vimeo jajah spock empressr
-                zimbra, mobly napster.
-              </p>
-            </div>
-            <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
+           
           </div>
         </div>
       </div>

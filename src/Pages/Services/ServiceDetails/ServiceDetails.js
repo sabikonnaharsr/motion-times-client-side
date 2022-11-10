@@ -19,7 +19,6 @@ const ServiceDetails = () => {
       ratings: '',
       img: 'img',
       message: text,
-
     }
 
     fetch('http://localhost:5000/clientReview', {
@@ -156,9 +155,6 @@ const ServiceDetails = () => {
   </div>
  
 </article>
-
-
-
 </div>
 
 
@@ -195,7 +191,8 @@ const ServiceDetails = () => {
 
 
 {/* button  */}
-
+<div>
+</div>
  </div>
 </div>
   );

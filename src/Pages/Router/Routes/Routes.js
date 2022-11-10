@@ -10,6 +10,8 @@ import Blogs from "../../Blogs/Blogs";
 import SuccessfulClient from "../../OurSuccess/SuccessfulClient/SuccessfulClient";
 import AllServices from "../../Services/AllServices/AllServices";
 import AllServicesSingleCard from "../../Services/AllServices/AllServicesSingleCard";
+import AddServices from "../../AddServices/AddServices";
+import MyReview from "../../MyReview/MyReview";
 
 
 const router = createBrowserRouter([
@@ -32,15 +34,18 @@ const router = createBrowserRouter([
             {
                 path: '/allServices',
                 element: <AllServices/>,
-                // loader: ({params}) => fetch(`http://localhost:5000/addServices/${params._id}`)
+            
             },
             {
-               path: '/serviceDetails',
-               element: <ServiceDetails/>
+               path: `/services/:id`,
+               element: <ServiceDetails/>,
+               loader: ({params})=> fetch(`http://localhost:5000/services/${params.id}`)
+               
             },
+            
             {
-                path: '/services',
-                element: <Services></Services>
+                path: '/addServices',
+                element: <AddServices></AddServices>
 
             },
             {
@@ -55,6 +60,10 @@ const router = createBrowserRouter([
             {
                 path: '/successfulClient',
                 element: <SuccessfulClient></SuccessfulClient>
+            },
+            {
+                path: '/review',
+                element: <MyReview></MyReview>
             },
             {
                 path: '*',

@@ -5,12 +5,14 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div>
-      <h1 className="text-5xl font-bold font-GreatVibes text-blue-500 mt-20 mb-20">
+      <h1 className="text-5xl font-bold font-GreatVibes text-rose-500 mt-20 mb-20">
         {" "}
         You’ve dreamed of this day for a lifetime. Make it unforgettable with
-        wedding photography that reflects the unique couple that you are. Keep
-        the memory of it alive forever with creative images that tell your love
-        story to the world!
+        <br /> 
+        wedding photography  that reflects the unique couple that you are. Keep
+        <br />
+        the memory of it alive forever 
+        with creative images that tell your love story to the world!
       </h1>
 
 
@@ -52,7 +54,7 @@ const About = () => {
           </div>
           <div class="absolute p-8 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100">
             <h3 class="mt-4 text-2xl font-medium text-rose-600">Washington Dc</h3>
-            <p class="mt-4">
+            <p class="mt-4 ">
             Talking with your spouse is one of the best ways to keep your marriage healthy and successful. Be honest about what you're feeling, but be kind and respectful when you communicate. Part of good communication is being a good listener and taking the time to understand what it is your spouse wants and needs from you.
             </p>
             <Link to='/allServices' class="mt-8 text-rose-600 font-bold">Read more</Link>

@@ -9,7 +9,7 @@ const AllServices = () => {
 
     
     useEffect(() => {
-        fetch('https://sequel-extract-server.vercel.app//allServices')
+        fetch('https://sequel-extract-server.vercel.app/allServices')
         .then(res => res.json())
         .then(data => setAllServices(data))
     },[])

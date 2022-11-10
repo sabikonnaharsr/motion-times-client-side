@@ -1,9 +1,11 @@
 import React,{ useContext } from 'react';
 import { Link } from 'react-router-dom';
 import UserContext, { AuthContext } from '../../Contexts/UserContext/UserContext';
+import UseTitle from '../Hooks/UseTitle';
 
 
 const ReviewCard = ({r,handleRemove}) => {
+	UseTitle('Review Card')
       const { user } = UserContext(AuthContext)
 
     const {price, email, img, _id} = r;

@@ -21,7 +21,7 @@ const ReviewPostPage = () => {
       email,
       feedback,
     };
-    fetch("http://localhost:5000/reviewByMail", {
+    fetch("https://sequel-extract-server.vercel.app/reviewByMail", {
       method: "POST",
       headers: {
         "content-type": "application/json",

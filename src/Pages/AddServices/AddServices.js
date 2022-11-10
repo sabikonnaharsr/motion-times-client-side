@@ -1,8 +1,9 @@
 import React from 'react';
 import { toast } from 'react-toastify';
+import UseTitle from '../Hooks/UseTitle';
 
 const AddServices = () => {
-
+UseTitle('Add Services')
    const addProducts = (e) => {
     const form = e.target;
     const title = form.title.value;

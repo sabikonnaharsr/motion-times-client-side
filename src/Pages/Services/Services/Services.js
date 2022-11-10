@@ -11,7 +11,7 @@ const Services = () => {
   UseTitle('Services')
 
   useEffect(() => {
-    fetch("http://localhost:5000/threeServices")
+    fetch("https://sequel-extract-server.vercel.app/threeServices")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);

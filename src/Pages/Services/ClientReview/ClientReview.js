@@ -1,9 +1,10 @@
 import React from 'react';
-
+import UseTitle from '../../Hooks/UseTitle';
 
 
 
 const ClientReview = () => {
+  UseTitle('Client Review')
     return (
       <div>
         <h3 className="font-bold text-center mt-20 mb-20  text-blue-500"> <p className='text-white text-3xl mb-3'>JULIE & MJ

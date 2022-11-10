@@ -34,9 +34,10 @@ const Navbar = () => {
           <li className="font-semibold">
             <Link to="/allServices">Services</Link>
           </li>
-          <Link onClick={handleLogout} className="font-semibold">
+         <li> <Link onClick={handleLogout} className="font-semibold">
             Log Out
-          </Link>
+          </Link>  
+        </li>
         </>
       ) : (
         <>
@@ -83,7 +84,7 @@ const Navbar = () => {
           <Link to="/" href="/" className="btn btn-ghost normal-case text-xl">
             <span className="text-white text-medium font-bold">
               {/* <img src={logo} alt="" /> */}
-              <h1 className="  text-3xl font-GreatVibes">Motion Times</h1>
+              <h1 className="text-4xl font-GreatVibes">Motion Times</h1>
             </span>
           </Link>
         </div>
@@ -95,11 +96,11 @@ const Navbar = () => {
         {user?.uid ? (
           <div className="flex items-center">
             <h1 className="font-GreatVibes text-blue-700">
-              {user.displayName}
+              {user?.displayName}
             </h1>
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                <img src={user.photoURL} alt="" />
+                <img src={user?.photoURL} alt="" />
               </div>
             </label>
           </div>

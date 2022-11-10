@@ -12,6 +12,7 @@ import AllServices from "../../Services/AllServices/AllServices";
 import AllServicesSingleCard from "../../Services/AllServices/AllServicesSingleCard";
 import AddServices from "../../AddServices/AddServices";
 import MyReview from "../../MyReview/MyReview";
+import ReviewCard from "../../ReviewCard/ReviewCard";
 
 const router = createBrowserRouter([
   {
@@ -38,7 +39,7 @@ const router = createBrowserRouter([
         path: `/services/:id`,
         element: <ServiceDetails />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/services/${params.id}`),
+          fetch(`https://sequel-extract-server.vercel.app/services/${params.id}`),
       },
       {
         path: '/myReview',
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: "/allServicesSingleCard",
         element: <AllServicesSingleCard />,
+      },
+      {
+        path: 'reviewCard',
+        element: <ReviewCard></ReviewCard>
       },
       {
         path: "/blogs",

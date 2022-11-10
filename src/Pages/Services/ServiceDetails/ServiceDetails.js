@@ -25,7 +25,7 @@ const ServiceDetails = () => {
       message: text,
     };
 
-    fetch("http://localhost:5000/clientReview", {
+    fetch("https://sequel-extract-server.vercel.app/clientReview", {
       method: "POST",
       headers: {
         "content-type": "application/json",

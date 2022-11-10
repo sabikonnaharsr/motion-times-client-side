@@ -4,12 +4,12 @@ import Services from '../Services/Services';
 import AllServicesSingleCard from './AllServicesSingleCard';
 
 const AllServices = () => {
-    // UseTitle('All Services');
+    UseTitle('All Services');
     const [allServices, setAllServices] = useState([])
 
     
     useEffect(() => {
-        fetch('http://localhost:5000/allServices')
+        fetch('https://sequel-extract-server.vercel.app//allServices')
         .then(res => res.json())
         .then(data => setAllServices(data))
     },[])

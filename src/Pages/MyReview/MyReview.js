@@ -1,14 +1,16 @@
 import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Contexts/UserContext/UserContext";
+import UseTitle from "../Hooks/UseTitle";
 
 import ReviewCard from "../ReviewCard/ReviewCard";
 
 const MyReview = () => {
+  UseTitle('My Review')
   const { user } = useContext(AuthContext);
   console.log(user);
   const [review, setReview] = useState([]);
 
-  console.log(`http://localhost:5000/reviewByMail?email=${user?.email}`);
+  console.log(`https://sequel-extract-server.vercel.app/reviewByMail?email=${user?.email}`);
 
   useEffect(() => {
     fetch(`http://localhost:5000/reviewByMail?email=${user?.email}`)

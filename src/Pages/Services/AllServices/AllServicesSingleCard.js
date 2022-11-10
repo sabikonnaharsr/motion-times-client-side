@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import UseTitle from '../../Hooks/UseTitle';
 
 const AllServicesSingleCard = ({allService}) => {
-  
+   UseTitle('All Services Single Card')
     const {title, price, img, description, _id} = allService;
     return (
    <div className="gird grid-cols md:grid-cols-3 lg:grid-cols-3 gap-4">

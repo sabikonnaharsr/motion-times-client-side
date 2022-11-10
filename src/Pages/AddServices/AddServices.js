@@ -7,10 +7,13 @@ const AddServices = () => {
     const form = e.target;
     const title = form.title.value;
     const price = form.price.value;
-    const photoURL = form.photoURL.value;
-    console.log(title, price, photoURL)
+    const email = form.email.value;
+    const img = form.img.value;
+    console.log(title,email, price, img)
     const data = {
-      title, price, photoURL
+      title: title, 
+      price: price,  
+      img: img
     }
 
     fetch('http://localhost:5000/allServices', {
@@ -141,7 +144,7 @@ const AddServices = () => {
             <input
               type=""
               id="text"
-              name="photoURL"
+              name="img"
               className="mt-1 w-full border-gray-900 bg-gray-700  text-gray-50 shadow-sm"
             />
           </div>

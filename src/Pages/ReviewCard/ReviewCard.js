@@ -6,13 +6,13 @@ import UserContext, { AuthContext } from '../../Contexts/UserContext/UserContext
 const ReviewCard = ({r,handleRemove}) => {
       const { user } = UserContext(AuthContext)
 
-    const {price, email, _id} = r;
+    const {price, email, img, _id} = r;
     return (
         <div className="container my-6 flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
 	<div className="flex justify-between p-4">
 		<div className="flex space-x-4">
 			<div>
-				<img src={user?.photoUrl? user?.photoUrl: <p>{price}</p> } alt="" className="object-cover w-12 h-12 rounded-full dark:bg-gray-500" />
+				<img src={user?.img? user?.img: <p>{price}</p> } alt="" className="object-cover w-12 h-12 rounded-full dark:bg-gray-500" />
 			</div>
 			<div>
 				<h4 className="font-bold">Leroy Jenkins</h4>
@@ -37,7 +37,7 @@ const ReviewCard = ({r,handleRemove}) => {
 		</div>
 		 <Link to={`/update/${_id}`}>
 			<button>See All</button>
-			</Link>
+		</Link>
 	</div>
 </div>
     );

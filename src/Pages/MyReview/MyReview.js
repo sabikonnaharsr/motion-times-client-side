@@ -10,12 +10,9 @@ const MyReview = () => {
   console.log(user);
   const [review, setReview] = useState([]);
 
-  console.log(
-    `https://sequel-extract-server.vercel.app/reviewByMail?email=${user?.email}`
-  );
 
   useEffect(() => {
-    fetch(`http://localhost:5000/reviewByMail?email=${user?.email}`)
+    fetch(`https://sequel-extract-server.vercel.app/reviewByMail?email=${user?.email}`)
       .then((res) => res.json())
       .then((data) => setReview(data));
   }, [user?.email]);
@@ -24,7 +21,7 @@ const MyReview = () => {
   const handleRemove = (id) => {
     const proceed = window.confirm("Are you sure, you want to remove");
     if (proceed) {
-      fetch(`http://localhost:5000/review/${id}`, {
+      fetch(`https://sequel-extract-server.vercel.app/review/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

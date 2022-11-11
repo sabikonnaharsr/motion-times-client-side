@@ -1,16 +1,10 @@
-import React,{ useContext } from 'react';
-import { Link } from 'react-router-dom';
-import UserContext, { AuthContext } from '../../Contexts/UserContext/UserContext';
-import UseTitle from '../Hooks/UseTitle';
+import React from 'react';
 
-
-const ReviewCard = ({r,handleRemove}) => {
-	UseTitle('Review Card')
-      const { user } = UserContext(AuthContext)
-
-    const {message, img, name, _id,  serviceTitle} = r;
+const ReviewById = ({reviewData}) => {
+    const {img, name, message} = reviewData;
     return (
-        <div className="container my-6 flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
+    <div>
+    <div className="container my-6 flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
 	<div className="flex justify-between p-4">
 		<div className="flex items-center space-x-4">
 			<div>
@@ -30,23 +24,11 @@ const ReviewCard = ({r,handleRemove}) => {
 	</div>
 	
 	<div className="p-4 space-y-2 text-sm dark:text-gray-400">
-	<div className='flex items-center justify-between'>
-		<p className='text-[17px] px-5 py-1 bg-amber-500 text-black'>Package Name : </p>
-		<p className='text-[17px] px-5 py-1 bg-amber-500 text-black'>{serviceTitle}</p>
-	 </div>
 		<p>{message}</p>
 	</div>
-    <div className="flex justify-between pb-4 border-bottom">
-		<div className="flex items-center">
-			<p  className="mb-0 capitalize dark:text-gray-100"></p>
-            <button onClick={() => handleRemove(_id)} >delete</button>
-		</div>
-		 <Link to={`/update/${_id}`}>
-			<button>Update</button>
-		</Link>
-	</div>
-        </div>
+    </div>
+    </div>
     );
 };
 
-export default ReviewCard;
+export default ReviewById;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { Link } from 'react-router-dom';
 import UseTitle from '../../Hooks/UseTitle';
 
@@ -11,12 +12,12 @@ const AllServicesSingleCard = ({allService}) => {
      <div className="px-4 py-16 mx-auto md:px-24 lg:px-8 lg:py-20">
       <div className=" ">
         <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-          <img
+        <PhotoProvider><PhotoView src={img}><img
             
             src= {img}
             className="object-cover w-full h-64"
             alt=""
-          />
+          /></PhotoView></PhotoProvider> 
           <div className="p-5 border border-t-0">
             <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
               <a

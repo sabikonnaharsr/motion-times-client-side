@@ -82,7 +82,7 @@ const Navbar = () => {
 
         <div>
           <Link to="/" href="/" className="btn btn-ghost normal-case text-xl">
-            <span className="text-white text-medium font-bold">
+            <span className="text-white text-medium">
               {/* <img src={logo} alt="" /> */}
               <h1 className="text-4xl font-GreatVibes">Motion Times</h1>
             </span>

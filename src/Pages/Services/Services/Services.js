@@ -41,23 +41,25 @@ const Services = () => {
               >
                 Package-Price
               </a>
-              <span className="text-gray-600">— ${service.price}</span>
+              <span className="text-gray-700">— ${service.price}</span>
             </p>
             <a
               href="/"
               aria-label="Category"
               title="Visit the East"
-              className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700 text-rose-600"
+              className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700 text-slate-700"
             >
               {service.title}
             </a>
             <p className="mb-2 text-gray-900">
+             <p className="text-gray-700">Ratings: {service?.ratings}</p>
               {service?.description?.slice(0,100)  }... 
             </p>
+            
             <Link
-              to={`/allServices/:${service._id}`}
+              to={'/allServices'}
               aria-label=""
-              className="inline-flex items-center font-bold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 text-rose-600 text-xxl"
+              className="inline-flex items-center font-bold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 text-pink-600 text-xxl"
             >
              See All
             </Link>
@@ -72,20 +74,18 @@ const Services = () => {
         </div>
        
       </div>
-      <Link className="" >
-    <div class="mt-3 text-center">
-      <Link
-        to='/allServices'
-        class="mt-8 inline-flex items-center rounded border border-pink-600 bg-pink-600 px-8 py-3 text-white hover:bg-transparent focus:outline-none focus:ring active:text-pink-500"
-      >
-        <span class="text-sm text-center font-medium px-16"> View All </span>
-      </Link>
-    </div></Link>
+    
     </div>)
     }
-  
+    
    </div>
-   
+   <div class="text-center">
+      <Link
+        to='/allServices'
+        class="mt-8 inline-flex mb-5 items-center rounded border border-pink-600 bg-pink-600 px-8 py-3 text-white hover:bg-transparent focus:outline-none focus:ring active:text-pink-500" >
+        <span class="text-sm text-center font-medium px-16"> View All </span>
+      </Link>
+    </div>
    </div>
   );
 };

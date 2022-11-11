@@ -13,6 +13,7 @@ import AllServicesSingleCard from "../../Services/AllServices/AllServicesSingleC
 import AddServices from "../../AddServices/AddServices";
 import MyReview from "../../MyReview/MyReview";
 import ReviewCard from "../../ReviewCard/ReviewCard";
+import UpdatePage from "../../UpdatePage/UpdatePage";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,11 @@ const router = createBrowserRouter([
         path: '/myReview',
         element: <MyReview></MyReview>
 
+      },
+      {
+        path: '/update/:id',
+        element: <UpdatePage/>,
+        loader: ({params}) => fetch(`https://sequel-extract-server.vercel.app/review/${params.id}`)
       },
 
       {

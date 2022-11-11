@@ -1,10 +1,13 @@
 import React from 'react';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import UseTitle from '../Hooks/UseTitle';
+import 'react-toastify/dist/ReactToastify.css';
+  
 
 const AddServices = () => {
 UseTitle('Add Services')
    const addProducts = (e) => {
+    e.preventDefault();
     const form = e.target;
     const title = form.title.value;
     const price = form.price.value;
@@ -17,7 +20,7 @@ UseTitle('Add Services')
       img: img
     }
 
-    fetch('http://localhost:5000/allServices', {
+    fetch('https://sequel-extract-server.vercel.app/allServices', {
       method: 'POST',
       headers: {
           'content-type': 'application/json'
@@ -28,12 +31,13 @@ UseTitle('Add Services')
     .then(data => 
       
       {
-        if(data.acknowledged){
-            toast.success('User added successfully');
-           
+        if(data.acknowledged){ 
+          alert("your review is successfully worked!");
+          form.reset();  
+            
         }
     })
-
+    .catch((er) => console.error(er.message));
    }
  
 
@@ -183,6 +187,7 @@ UseTitle('Add Services')
             >
               Create an account
             </button>
+          
 
             <p className="mt-4 text-sm text-gray-500 sm:mt-0">
               Already have an account?

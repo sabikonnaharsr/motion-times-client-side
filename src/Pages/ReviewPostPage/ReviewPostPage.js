@@ -33,7 +33,7 @@
 //       .then((data) => {
 //         console.log(data);
 //         if (data.acknowledged) {
-//           alert("hoise");
+//           alert("your review is successfully worked!");
 //           form.reset();
 //         }
 //       })

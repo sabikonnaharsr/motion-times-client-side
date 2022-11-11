@@ -18,7 +18,7 @@ const ClientReview = () => {
           <br />
           photos for us. It was much appreciated! Thanks Portrait Gallery! Our pictures came out great!
         </p>
-       <p className='text-blue-600 gap-4 font-bold'>______     ________     _______ </p>
+       <p className='text-blue-600 gap-4 font-bold'>________     _________     ________ </p>
        </h3>
      </div>
     );

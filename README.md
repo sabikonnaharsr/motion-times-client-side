@@ -9,7 +9,7 @@
 - ### Technologies
 - React , React Tailwind , daisyui, hyper
 - React Router Dom
-- React 
+- React , toast
 - Firebase Authentication
 - Context Api
 - react-photo-view
@@ -25,11 +25,13 @@
 - 
 
 
+<!-- server link -->
+## https://github.com/Porgramming-Hero-web-course/b6a11-service-review-server-side-sabikonnaharsr
 
-<!-- my project server link -->
-## 
+<!-- my project client link -->
+## https://github.com/Porgramming-Hero-web-course/b6a11-service-review-client-side-sabikonnaharsr
 
 
 
 <!-- here is my live link of my project -->
-##
+## live link: https://sequel-extract.web.app

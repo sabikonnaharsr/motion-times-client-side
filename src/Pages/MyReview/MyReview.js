@@ -37,10 +37,9 @@ const MyReview = () => {
   };
 
   return (
-    <div>
+    <div className="px-3 my-6">
       <h2 className="text-5xl my-6">You have {review?.length} Orders</h2>
-
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
         {review?.map((r) => (
           <ReviewCard
             key={r._id}

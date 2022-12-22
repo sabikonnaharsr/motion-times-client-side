@@ -52,7 +52,7 @@ const ServiceDetails = () => {
       <div>
         <h1 className="text-5xl text-rose-700 text-center font-GreatVibes mt-10 "> Wow great you choose this Package!
       </h1>
-        <div className="w-11/12 mx-auto py-16 grid grid-cols-2 gap-10">
+        <div className="w-11/12 mx-auto py-16 grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div>
             <a href="/" class="group relative block bg-black">
               <img
@@ -87,7 +87,8 @@ const ServiceDetails = () => {
             </a>
           </div>
           <div>
-            <div className="py-16 rounded-md  dark:bg-gray-900">
+            
+          <div className="py-16 rounded-md dark:bg-gray-900">
               <h1 className="text-5xl font-GreatVibes dark:text-gray-50">
                  Please put your opinion!
               </h1>
@@ -142,7 +143,7 @@ const ServiceDetails = () => {
         <div>
            {!user?.email && <h1 className="text-4xl font-GreatVibes mb-6 mt-5">Please <Link className=" text-blue-700 " to='/login'>login</Link> to add a review.</h1>}
              {
-              user?.email && <div className="grid w-11/12 mx-auto grid-cols-3 px-5  gap-5">
+              user?.email && <div className="grid my-4 w-11/12 mx-auto grid-cols-1 lg:grid-cols-3 gap-3">
               {
                review.map(r => <ReviewById key={r._id}
                reviewData={r}

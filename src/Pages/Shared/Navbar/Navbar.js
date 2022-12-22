@@ -52,6 +52,7 @@ const Navbar = () => {
     </>
   );
 
+  
   return (
     <div className="navbar h-28 bg-slate-900">
       <div className="navbar-start">
@@ -107,9 +108,7 @@ const Navbar = () => {
         ) : (
           <FaUser></FaUser>
         )}
-        {user?.uid ? undefined : (
-          <button className="btn btn-outline btn-warning ">Appointment</button>
-        )}
+        
       </div>
     </div>
   );

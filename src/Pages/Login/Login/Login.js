@@ -42,64 +42,32 @@ const Login = () => {
 
     
 
-
-    return (
-    <div>
+    return ( 
      <section className="bg-slate-800 rounded-lg">
-      <div className="mx-auto lg:w-2/5 px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-x-16 bg-slate-900 gap-y-8">
-          <div className="rounded-lgp-8 shadow-lg lg:col-span-3 lg:p-12">
-            <form onSubmit={handleLoginSubmit} className=" space-y-4 p-5">
-              <div>
-                <label className="sr-only" htmlFor="name">
-                  Name
-                </label>
-                <input
-                  className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                  placeholder="Name"
-                  type="text"
-                  name="name"
-                />
-              </div>
+      <div className="mx-auto lg:w-1/4 px-4 py-16 sm:px-6">
+        <div className="grid grid-cols-1 gap-x-16 bg-slate-900  min-h-[500px] gap-y-8">
+          <div className="rounded-lg shadow-lg lg:col-span-3 p-10">
+            <h1 className='text-xl mb-3'>Login</h1>
+            <form onSubmit={handleLoginSubmit} className=" space-y-4 ">
+            
               <div>
                 <label className="sr-only" htmlFor="email">
                   Email
                 </label>
                 <input
-                  className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  className="w-full rounded-lg border-gray-200 p-3 mb-5 text-sm"
                   placeholder="Email address"
                   type="email"
                   name="email"
                 />
               </div>
-              <div>
-                <label className="sr-only" htmlFor="email">
-                  Photo Link
-                </label>
-                <input
-                  className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                  placeholder="Profile Image Link"
-                  name="profileImg"
-                />
-              </div>
 
-              <div>
-                <label className="sr-only" htmlFor="phone">
-                  Phone
-                </label>
-                <input
-                  className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                  placeholder="Phone Number"
-                  type="tel"
-                  name="phone"
-                />
-              </div>
               <div>
                 <label className="sr-only" htmlFor="phone">
                   Password
                 </label>
                 <input
-                  className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  className="w-full rounded-lg border-gray-200 mb-5 p-3 text-sm"
                   placeholder="Password"
                   type="password"
                   name="password"
@@ -113,7 +81,7 @@ const Login = () => {
                   Confirm Password
                 </label>
                 <input
-                  className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  className="w-full rounded-lg border-gray-200 mb-5 p-3 text-sm"
                   placeholder="Confirm Password"
                   type="password"
                   name="ConfirmPassword"
@@ -121,7 +89,7 @@ const Login = () => {
               </div>
 
               <div className="flex flex-col justify-center">
-                <button className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500 w-3/4 mx-auto">
+                <button className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500">
                    Login
                 </button>
 
@@ -144,7 +112,7 @@ const Login = () => {
         </div>
       </div>
     </section>
-    </div>
+ 
     );
 };
 

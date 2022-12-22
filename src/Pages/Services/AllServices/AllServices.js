@@ -17,7 +17,9 @@ const AllServices = () => {
 
 
     return (
-        <div className="my-6 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div>
+            <h1 className='text-pink-500 font-bold mt-10 text-3xl'>All services are here please select your best one</h1>
+            <div className="justify-between lg:px-20 px-3 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 mb-6 mt-10">
               {
                 allServices.map(allService => <AllServicesSingleCard 
                 key={allService._id}
@@ -25,6 +27,7 @@ const AllServices = () => {
                 
                 ></AllServicesSingleCard>)
               }    
+        </div>
         </div>
     );
 };

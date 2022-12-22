@@ -8,16 +8,17 @@ const AllServicesSingleCard = ({allService}) => {
    UseTitle('All Services Single Card')
     const {title, price, img, description, _id} = allService;
     return (
-   <div className="gird grid-cols md:grid-cols-3 lg:grid-cols-3 gap-4">
-     <div className="px-4 py-16 mx-auto md:px-24 lg:px-8 lg:py-20">
+   <div>
+     <div className="">
       <div className=" ">
         <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-        <PhotoProvider><PhotoView src={img}><img
-            
+        <PhotoProvider>
+          <PhotoView src={img}><img  
             src= {img}
             className="object-cover w-full h-64"
-            alt=""
-          /></PhotoView></PhotoProvider> 
+            alt=""/>
+            </PhotoView>
+          </PhotoProvider> 
           <div className="p-5 border border-t-0">
             <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
               <a

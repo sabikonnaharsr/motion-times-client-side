@@ -21,7 +21,6 @@ const Home = () => {
       <ClientReview></ClientReview>
       <WinningYear></WinningYear>
       <OurContents></OurContents>
-    
       <Services></Services>
 
       {/* <PhotoProvider>
@@ -33,6 +32,9 @@ const Home = () => {
           />
         </PhotoView>
       </PhotoProvider> */}
+
+
+
     </div>
   );
 };
